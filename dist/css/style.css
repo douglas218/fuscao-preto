@@ -1,0 +1,48 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: Georgia, serif;
+	color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+  max-width: 100%;
+  /* background-color: blue; */
+}
+
+/* Logo */
+.header {
+  background: burlywood;
+}
+.header-logo {
+  padding: 20px;
+}
+.header-logo img {
+  background: burlywood;
+  margin: 0 auto;
+}
+
+/* MAIN */
+
+.redes ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.redes ul li a {
+  display: block;
+  
+}
+.redes img {
+  width: 32px;
+  height: 32px;
+}
