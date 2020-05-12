@@ -1,5 +1,6 @@
-/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+/* Reset */
 body, h1, h2, h3, p, ul {
 	padding: 0px;
 	margin: 0px;
@@ -7,7 +8,7 @@ body, h1, h2, h3, p, ul {
 
 body {
   background-color: #595fbf;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: #252525;
 }
 
@@ -25,7 +26,9 @@ button {
 }
 
 .logo {
-  height: 110.4px;
+
+  width: 107px;
+  height: 145.4px;
 }
 
 .logo-box {
@@ -36,6 +39,29 @@ button {
 
 .left-panel {
   color: white;
+
+  margin-right: 35px;
+  padding: 0;
+}
+
+.titulo {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.texto {
+  max-width: 540px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
 }
 
 .card {
@@ -44,22 +70,58 @@ button {
   padding-right: 70px;
   padding-bottom: 40px;
   border-radius: 15px;
+  margin-left: 20px;
   background-color: #eaeaea;
 }
 
 .card h3 {
-  color: #757575;
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6f6f6f;
 }
 
 .card p {
-  color: #757575;
-  font-size: 15px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #6f6f6f;
 }
 
 .button-submit {
   font-weight: bold;
   color: white;
   background-color: #f27a58;
+
+ #divEmail input, #divNome input {
+  -webkit-text-stroke: 0.01px #ffffff;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6f6f6f;
+}
+
+.btn {
+  font-family: Lato;
+  font-size: 17px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.13px;
+  color: #ffffff;
 }
 
 .form-control-lg {
@@ -70,6 +132,17 @@ button {
   color: #757575;
   padding: 30px;
   background-color: white;
+}
+
+.footer p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #6f6f6f;
 }
 
 .redes img {
