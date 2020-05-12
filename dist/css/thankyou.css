@@ -1,10 +1,11 @@
-body, h1, h2, h3, p, ul {
+body, h1, h2, h3, p, ul, button  {
 	padding: 0px;
     margin: 0px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
+    font-family: Lato;
 }
 
 body {
@@ -40,8 +41,7 @@ header{
 }
 
 .texto_obrigado {
-    font-family: Lato;
-    font-size: 36px;
+    font-size: 2.5em;
     font-weight: 900;
     color: #ffffff;
     padding-bottom: 20px;
@@ -49,21 +49,17 @@ header{
 
 
 .botao_ebook {
-    width: 261px;
-    height: 52px;
     border-radius: 6px;
     background-color: #f47958;
     border: none;
-
-    font-family: Lato;
     font-size: 17px;
     font-weight: 900;
     letter-spacing: 2.13px;
     color: #ffffff;
+    padding: 16px 34px;
 }
 
 .texto_agradecimento {
-  font-family: Lato;
   font-size: 18px;
   line-height: 1.8;
   color: #ffffff;
@@ -86,7 +82,6 @@ footer {
 
 footer .texto_footer {
     width: 669px;
-    font-family: Lato;
     font-size: 16px;
     line-height: 1.5;
     color: #6f6f6f;
@@ -97,11 +92,16 @@ footer .texto_footer {
 
 footer li {
     list-style: none;
-    padding-right: 7px;
+    padding: 8px;
 }
-.socialIcons{
+footer li:not(:last-child) {
+    margin-right: 5px;
+}
+
+.socialIcons {
     flex-direction: row;
     display: flex;
+    margin: 0 auto;
 }
 @media all and (max-width: 1307px) { 
     .empetyDiv {
@@ -124,6 +124,7 @@ footer li {
 @media all and (max-width: 1055px) { 
     footer{
         flex-wrap: wrap;
+        padding-bottom: 30px;
     }
     footer p {
         max-width: none;
@@ -147,6 +148,8 @@ footer li {
     }
     .texto_agradecimento {
         font-size: 16px;
-
+    }
+    .texto_obrigado {
+        font-size: 2em;
     }
 }
