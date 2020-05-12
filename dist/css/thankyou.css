@@ -120,6 +120,7 @@ footer li {
     }
 
 }
+
 @media all and (max-width: 1055px) { 
     footer{
         flex-wrap: wrap;
@@ -127,9 +128,17 @@ footer li {
     footer p {
         max-width: none;
     }
+    
 }
 
+@media all and (max-width: 820px) { 
 
+    footer .texto_footer {
+        width: auto!important;
+        max-width: none!important;
+   }
+
+ }
 @media all and (max-width: 634px) { 
 
     .container {
