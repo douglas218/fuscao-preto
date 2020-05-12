@@ -147,10 +147,46 @@ button {
 }
 
 .redes img {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 
 .redes ul li {
   padding: 8px;
+}
+
+@media all and (max-width: 1307px) { 
+  .container {
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+}
+
+@media all and (max-width: 634px) { 
+  .h1, h1 {
+      font-size: 2rem;
+  }
+  .list-inline {
+      text-align: center;
+  }
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .card {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0;
+  }
+  .col-md {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .divFooter {
+    padding: 30px 0 30px 0;
+  }
 }
