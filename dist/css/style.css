@@ -100,8 +100,9 @@ button {
   font-weight: bold;
   color: white;
   background-color: #f27a58;
+}
 
- #divEmail input, #divNome input {
+#divEmail input, #divNome input {
   -webkit-text-stroke: 0.01px #ffffff;
   font-family: Lato;
   font-size: 18px;
