@@ -3,106 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header class="header">
-      <!-- <div class="container">
-      <div class="row"> -->
-      <a class="header-logo" href="#"
-        ><img src="./img/brafe.png" alt=""
-      /></a>
-      <!-- </div>
-    </div> -->
+    <header class="header mb-5">
+      <div class="mx-auto pt-5 logo-box">
+        <img class="logo" src="img/logo.svg" alt="logo">
+      </div>
     </header>
 
     <main class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h1>FUSCÃO PRETO<br />formulário para o Show me the Leads</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos distinctio, vitae totam, dolore qui nostrum ut corrupti a magni eligendi voluptatum odit perferendis velit quae consequatur, pariatur facilis. Alias saepe soluta iure vitae quae recusandae voluptas dolor molestiae sed?
+      <section class="row">
+        <div class="col-md left-panel mt-5">
+          <h1 class="mb-4">FUSCÃO PRETO formulário para o Show me the Leads</h1>
+          <p class="mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos distinctio, vitae totam, dolore qui nostrum ut corrupti a magni eligendi voluptatum odit perferendis velit quae consequatur, pariatur facilis. Alias saepe soluta iure vitae quae recusandae voluptas dolor molestiae sed? Nostrum ut corrupti a magni eligendi voluptatum odit perferendis velit quae consequatur, pariatur facilis. Nostrum ut corrupti a magni eligendi voluptatum odit perferendis velit quae consequatur, pariatur facilis
           </p>
-          <div class="img">
-            <img src="./img/botafogo.jpg" alt="" />
+        </div>
+
+        <div class="col-md">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title text-center mb-4">Special title lorem ipsum dolor sit amet:</h3>
+              <form
+                method="POST"
+                action="https://fuscao-preto-testes.netlify.app/blog/index.html"
+              >
+                <div id="divNome" class="form-group">
+                  <input
+                    id="txtNome"
+                    type="text"
+                    name="txtNome"
+                    placeholder="Nome"
+                    pattern="^\D{2,}\s[\D\s]{2,}$"
+                    title="Digite seu nome completo"
+                    class="form-control form-control-lg"
+                    required
+                  />
+                </div>
+
+                <div id="divEmail" class="form-group">
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    title="Digite um email válido"
+                    class="form-control form-control-lg"
+                    required
+                  />
+                </div>
+
+                <input
+                  name="redirectTo"
+                  type="hidden"
+                  value="https://gama.academy"
+                />
+
+                <input name="debugMode" type="hidden" value="true"/>
+
+                <button type="submit" class="btn btn-lg btn-block button-submit mb-4">ENVIAR</button>
+
+                <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos distinctio, vitae totam.</p>
+              </form>
+            </div>
           </div>
         </div>
-
-        <section class="col-md-4">
-          <h1>Morbi scelerisque velit risus:</h1>
-          <form
-            method="POST"
-            action="https://fuscao-preto-testes.netlify.app/blog/index.html"
-          >
-            <div id="divNome">
-              <label id="lblNome" for="txtNome">Nome:</label>
-              <input
-                id="txtNome"
-                name="txtNome"
-                type="text"
-                pattern="^\D{2,}\s[\D\s]{2,}$"
-                title="Digite seu nome completo"
-                required
-              />
-            </div>
-
-            <br />
-
-            <div id="divEmail">
-              <label id="lblEmail" for="txtEmails">Email:</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                title="Digite um email válido"
-                required
-              />
-            </div>
-
-            <br />
-
-            <input
-              name="redirectTo"
-              type="hidden"
-              value="https://gama.academy"
-            />
-            <input name="debugMode" type="hidden" value="true" />
-            <input type="submit" />
-          </form>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, et?</p>
-        </section>
-      </div>
+      </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer container-full mt-5">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6 offset-md-1 col-xs-12">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quia cum, rem ducimus animi hic ad consectetur temporibus deleniti aliquid.</p>
         </div>
-        <div class="redes col-md-4"> 
-          <ul class="">
-            <li>
+
+        <div class="redes col-md-2 offset-md-3 col-xs-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
               <a href="#" target="_blank">
                 <img src="./img/instagram.svg" alt="">
               </a>
             </li>
-            <li>
+            <li class="list-inline-item">
               <a href="#" target="_blank">
                 <img src="./img/instagram.svg" alt="">
               </a>
             </li>
-            <li>
+            <li class="list-inline-item">
               <a href="#" target="_blank">
                 <img src="./img/share.svg" alt="">
               </a>
             </li>
-          </ul>        
+          </ul>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
