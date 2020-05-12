@@ -26,6 +26,7 @@ button {
 }
 
 .logo {
+
   width: 107px;
   height: 145.4px;
 }
@@ -38,6 +39,7 @@ button {
 
 .left-panel {
   color: white;
+
   margin-right: 35px;
   padding: 0;
 }
@@ -98,9 +100,8 @@ button {
   font-weight: bold;
   color: white;
   background-color: #f27a58;
-}
 
-#divEmail input, #divNome input {
+ #divEmail input, #divNome input {
   -webkit-text-stroke: 0.01px #ffffff;
   font-family: Lato;
   font-size: 18px;
