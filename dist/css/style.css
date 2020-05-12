@@ -1,12 +1,14 @@
-/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+/* Reset */
 body, h1, h2, h3, p, ul {
 	padding: 0px;
 	margin: 0px;
 }
 
 body {
-	font-family: Georgia, serif;
+  background-color: #595fbf;
+	font-family: 'Lato', sans-serif;
 	color: #252525;
 }
 
@@ -17,32 +19,136 @@ body {
 img {
 	display: block;
   max-width: 100%;
-  /* background-color: blue; */
 }
 
-/* Logo */
-.header {
-  background: burlywood;
+button {
+  cursor: pointer;
 }
-.header-logo {
-  padding: 20px;
+
+.logo {
+  width: 107px;
+  height: 145.4px;
 }
-.header-logo img {
-  background: burlywood;
-  margin: 0 auto;
+
+.logo-box {
+  width: 100px;
 }
 
 /* MAIN */
 
-.redes ul li {
-  display: inline-block;
-  padding: 10px;
+.left-panel {
+  color: white;
+  margin-right: 35px;
+  padding: 0;
 }
-.redes ul li a {
-  display: block;
-  
+
+.titulo {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
 }
+.texto {
+  max-width: 540px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.card {
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  margin-left: 20px;
+  background-color: #eaeaea;
+}
+
+.card h3 {
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6f6f6f;
+}
+
+.card p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #6f6f6f;
+}
+
+.button-submit {
+  font-weight: bold;
+  color: white;
+  background-color: #f27a58;
+}
+
+#divEmail input, #divNome input {
+  -webkit-text-stroke: 0.01px #ffffff;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6f6f6f;
+}
+
+.btn {
+  font-family: Lato;
+  font-size: 17px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.13px;
+  color: #ffffff;
+}
+
+.form-control-lg {
+  width: 100%;
+}
+
+.footer {
+  color: #757575;
+  padding: 30px;
+  background-color: white;
+}
+
+.footer p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #6f6f6f;
+}
+
 .redes img {
   width: 32px;
   height: 32px;
+}
+
+.redes ul li {
+  padding: 8px;
 }
