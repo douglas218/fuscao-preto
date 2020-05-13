@@ -116,15 +116,14 @@ button {
   color: #6f6f6f;
 }
 
-
 .redes ul li {
   padding: 8px;
 }
+
 .redes img {
   width: 48px;
   height: 48px;
 }
-
 
 @media all and (max-width: 1307px) { 
   .container {
