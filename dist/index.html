@@ -25,13 +25,13 @@
 
     <body>
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMDZZ6T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript><iframe title="Google Tag Manager"src="https://www.googletagmanager.com/ns.html?id=GTM-NMDZZ6T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
         <section class="sectionOne">
             <div class="divHeader">
                 <div class="divLogo">
-                    <img class="logo" src="./svg/logo2.svg" alt="logo">
+                    <img class="logo" src="./svg/logo2.svg" alt="Logo">
                     <h1>Reinvente a maneira como você trabalha remotamente</h1>
                     <p>Um guia prático de como fazer qualquer lugar (sua casa) se tornar o ambiente ideal para seu trabalho remoto. As melhores ferramentas e sugestões de como utilizá-las para tornar o seu dia mais produtivo. </p>
                     <h2>OFERTA TERMINA EM:</h2>
@@ -46,7 +46,7 @@
                         </ul>
                     </div>
 
-                    <button><a href="#download-tool">QUERO O GUIA GRÁTIS</a></button>
+                    <button title="Botão para ir ao formulário do EBOOK"><a href="#download-tool">QUERO O GUIA GRÁTIS</a></button>
                 </div>
                 <div class="divImgHeader">
                 </div>
@@ -56,13 +56,13 @@
         <section class="sectionTwo">
             <div class="divSectionTwo">
                 <div class="divIcon">
-                    <img class="icon" src="./svg/organizacao.svg" alt="logo">
+                    <img class="icon" src="./svg/organizacao.svg" alt="Organização">
                     <h3>ORGANIZAÇÃO</h3>
                     <p>Um ambiente de trabalho organizado ajuda você ter mais produtividade e sobrar tempo para o que importa.</p>
                 </div>
 
                 <div class="divIcon">
-                    <img class="icon" src="./svg/comunicacao.svg" alt="logo">
+                    <img class="icon" src="./svg/comunicacao.svg" alt="Comunicação">
                     <h3>Comunicação</h3>
                     <p>Entender as ferramentas 
                         e como diminuir o ruído
@@ -71,13 +71,13 @@
                 </div>
 
                 <div class="divIcon">
-                    <img class="icon" src="./svg/praticidade.svg" alt="logo">
+                    <img class="icon" src="./svg/praticidade.svg" alt="Praticidade">
                     <h3>Praticidade</h3>
                     <p>É possível fazer mais com menos esforço conhecendo as opções disponíveis.</p>
                 </div>
             </div>
-            <div class="divButtonFerramentas">
-                <button class="buttonFerramentas" ><a href="#download-tool">QUERO ACESSO ÀS FERRAMENTAS</a></button>
+            <div id="botaoFerramentas" class="divButtonFerramentas">
+                <button aria-labelledby="botaoFerramentas" class="buttonFerramentas" ><a href="#download-tool">QUERO ACESSO ÀS FERRAMENTAS</a></button>
             </div>
         </section>
 
@@ -96,7 +96,7 @@
         <section id="download-tool" class="sectionFour">
             <div class="divForm">
 
-                <h3 class="">Preencha o formulário abaixo para receber o guia</h3>
+                <h3 aria-labelledby="download-tool" class="">Preencha o formulário abaixo para receber o guia</h3>
   
                 <form
                   method="POST"
@@ -108,9 +108,11 @@
                       type="text"
                       placeholder="Nome"
                       pattern="^\D{2,}\s[\D\s]{2,}$"
-                      title="Digite seu nome completo"
+                      title="Campo para seu nome completo"
                       class="form-control form-control-lg"
                       required
+                      aria-label="Digite seu nome completo"
+                      aria-labelledby="inputName download-tool"                      
                     />
                   </div>
   
@@ -119,9 +121,11 @@
                       name="email"
                       type="email"
                       placeholder="Email"
-                      title="Digite um email válido"
+                      title="Campo para um email válido"
                       class="form-control form-control-lg"
                       required
+                      aria-label="Campo para um email válido"
+                      aria-labelledby="inputEmail download-tool"                      
                     />
                   </div>
   
@@ -133,22 +137,22 @@
   
                   <!-- <input name="debugMode" type="hidden" value="true"/> -->
   
-                  <button type="submit" class="btn btn-lg btn-block button-submit mb-4">ENVIAR</button>
+                  <button title="Envia formulário para receber EBOOK" aria-labelledby="download-tool" type="submit" class="btn btn-lg btn-block button-submit mb-4" >ENVIAR</button>
   
-                  <p class="text-center text-muted">Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</p>
+                  <p class="text-center text-muted" aria-labelledby="download-tool">Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</p>
   
                 </form>
               </div>
         </section>
         <footer>
-                <div class="footerText">
-                    <p class="texto_footer">Siga nossas redes sociais para continuar acompanhando conteúdos sobre produtividade, organização, e outros temas relevantes para tornar o seu dia-a-dia mais prático!</p>
+                <div aria-labelledby="texto_footer" class="footerText">
+                    <p id="texto_footer" class="texto_footer">Siga nossas redes sociais para continuar acompanhando conteúdos sobre produtividade, organização, e outros temas relevantes para tornar o seu dia-a-dia mais prático!</p>
                 </div>
 
                 <div class="socialIcons">
-                    <li><a href="https://www.instagram.com/oneline.life/" target="_blank" ><img src='./svg/instagram.svg' /></a></li>                  
-                    <li><a href="https://www.facebook.com/oneline.life/" target="_blank"><img src='./svg/facebook.svg' /></a></li>
-                    <li><a href="#" target="_blank"><img src='./svg/share.svg' /></a></li>
+                    <li><a href="https://www.instagram.com/oneline.life/" target="_blank" ><img src='./svg/instagram.svg' alt="Instagram"/></a></li>                  
+                    <li><a href="https://www.facebook.com/oneline.life/" target="_blank"><img src='./svg/facebook.svg' alt="Facebook"/></a></li>
+                    <li><a href="#" target="_blank"><img src='./svg/share.svg' alt="Compartilhar"/></a></li>
                 </div>
         </footer>
 
