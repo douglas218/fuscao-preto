@@ -86,7 +86,9 @@ footer {
     object-fit: contain;
     padding-top: 15px;
 }
-
+.socialIcons ul {
+    display: flex;
+}
 footer .texto_footer {
     width: 669px;
     font-size: 16px;
