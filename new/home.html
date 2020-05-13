@@ -9,6 +9,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="./css/countdown.css">
+        <script src="./js/jquery-3.1.1.min.js"></script>
+        <script src="./js/jquery-2.2.0.countdown.min.js"></script>
     </head>
 
     <body>
@@ -20,7 +23,18 @@
                     <h1>Reinvente a maneira como você trabalha remotamente</h1>
                     <p>Um guia prático de como fazer qualquer lugar (sua casa) se tornar o ambiente ideal para seu trabalho remoto. As melhores ferramentas e sugestões de como utilizá-las para tornar o seu dia mais produtivo. </p>
                     <h2>OFERTA TERMINA EM:</h2>
-                    <button>QUERO O GUIA GRÁTIS</button>
+
+                    <!-- Countdown -->
+                    <div class="div-countdown">
+                        <ul id="countdown" class="countdown">
+                            <li><span id="days"    class="countdown_time">00</span><span class="countdown_label">dias</span></li>
+                            <li><span id="hours"   class="countdown_time">00</span><span class="countdown_label">horas</span></li>
+                            <li><span id="minutes" class="countdown_time">00</span><span class="countdown_label">minutos</span></li>
+                            <li><span id="seconds" class="countdown_time">00</span><span class="countdown_label">segundos</span></li>
+                        </ul>
+                    </div>
+
+                    <button><a href="#download-tool">QUERO O GUIA GRÁTIS</a></button>
                 </div>
                 <div class="divImgHeader">
                 </div>
@@ -51,7 +65,7 @@
                 </div>
             </div>
             <div class="divButtonFerramentas">
-                <button class="buttonFerramentas">QUERO ACESSO ÀS FERRAMENTAS</button>
+                <button class="buttonFerramentas" ><a href="#download-tool">QUERO ACESSO ÀS FERRAMENTAS</a></button>
             </div>
         </section>
 
@@ -60,14 +74,14 @@
                 <div class="divSectionThreeText">
                     <p>No Brasil 43% das empresas aderiram ao 
                         Home Office devido ao Coronavírus e a tendência é que esse número aumente ao longo dos próximos anos. Entenda quais as ferramentas certas para melhorar sua rotina nessa categoria de trabalho cada vez mais crescente.</p>
-                        <button class="buttonQuero">QUERO ESTAR PREPARADO</button>
+                         <button class="buttonQuero" ><a href="#download-tool">QUERO ESTAR PREPARADO</a></button>
                     </div>
                     <div class="divSectionImg"></div>
             </div>
         </section>
 
 
-        <section class="sectionFour">
+        <section id="download-tool" class="sectionFour">
             <div class="divForm">
 
                 <h3 class="">Preencha o formulário abaixo para receber o guia</h3>
@@ -124,7 +138,8 @@
                     <li><a href="https://www.facebook.com/oneline.life/" target="_blank"><img src='./svg/facebook.svg' /></a></li>
                     <li><a href="#" target="_blank"><img src='./svg/share.svg' /></a></li>
                 </div>
-
         </footer>
+
+        <script src="./js/countdown.js"></script>
     </body>
 </html>
