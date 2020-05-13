@@ -70,14 +70,9 @@ header{
 footer {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #ffffff;
-    /* padding: 0 9% 0 10%; */
-    width: 100%;
-    /* position: absolute;
-    bottom: 0; */
-    flex-direction: column-reverse;
+    padding: 30px 10%;
 }
 
 .socialIcons img {
@@ -94,9 +89,9 @@ footer .texto_footer {
     font-size: 16px;
     line-height: 1.5;
     color: #6f6f6f;
-    padding-bottom: 30px;
-    text-align: center;
+
 }
+
 
 footer li {
     list-style: none;
@@ -109,7 +104,6 @@ footer li:not(:last-child) {
 .socialIcons {
     flex-direction: row;
     display: flex;
-    margin: 0 auto;
 }
 @media all and (max-width: 1307px) { 
     .empetyDiv {
@@ -130,13 +124,27 @@ footer li:not(:last-child) {
 }
 
 @media all and (max-width: 1055px) { 
-    footer{
+    footer {
         flex-wrap: wrap;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
+
     footer p {
         max-width: none;
     }
+    footer {
+        justify-content: center;
+    }
+    footer .texto_footer {
+        text-align: center;
+    }
+    .socialIcons {
+        order: 1;
+    }
+    .footerText{
+        order: 2;
+    }
+    
 
 }
 
@@ -146,6 +154,9 @@ footer li:not(:last-child) {
         width: auto!important;
         max-width: none!important;
    }
+   footer .texto_footer {
+        text-align: center;
+    }
 
  }
 @media all and (max-width: 634px) { 

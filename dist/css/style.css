@@ -106,16 +106,20 @@ button {
 
 .footer {
   color: #757575;
-  padding: 30px;
   background-color: white;
+  padding: 30px 10%;
 }
 
 .footer p {
   font-size: 16px;
   line-height: 1.5;
   color: #6f6f6f;
+  width: 669px;
 }
 
+.redes.col-md-5.col-xs-12 {
+  text-align: right;
+}
 .redes ul li {
   padding: 8px;
 }
@@ -125,16 +129,43 @@ button {
   height: 48px;
 }
 
-@media all and (max-width: 1307px) { 
-  .container {
-      padding-left: 100px;
-      padding-right: 100px;
+@media all and (max-width: 1055px) {
+
+  .footer p {
+    width: auto;
+  }
+  
+}
+
+@media all and (max-width: 1029px) {
+  .col-md-7.col-xs-12.divFooter {
+    text-align: center;
+    margin: 0 auto;
+    order: 2;
+  } 
+  footer .row {
+    flex-direction: column;
+  }
+  .redes.col-md-5.col-xs-12 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .redes.col-md-7.col-xs-12 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer p {
+    padding-top: 25px;
   }
 }
+
 
 @media all and (max-width: 634px) { 
   .h1, h1 {
       font-size: 2rem;
+  }
+  section.row {
+    padding: 0 20px;
   }
   .list-inline {
       text-align: center;
@@ -143,10 +174,10 @@ button {
     padding-left: 0;
     padding-right: 0;
   }
-  .container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+  footer .row {
+    padding: 0 20px;
+}
+
   .card {
     padding-left: 20px;
     padding-right: 20px;
@@ -158,5 +189,9 @@ button {
   }
   .divFooter {
     padding: 30px 0 30px 0;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
