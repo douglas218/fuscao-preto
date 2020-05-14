@@ -13,7 +13,8 @@ body, h1, h2, h3, p, ul, button {
 
 body {
   background-color: #595fbf;
-	color: #252525;
+  color: #252525;
+  background-image: url(../img/home_background.jpg);
 }
 
 * {
