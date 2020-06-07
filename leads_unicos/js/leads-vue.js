@@ -27,12 +27,28 @@ const vm = new Vue({
         fetch(equipes[i].URL)
           .then(r => r.json())
           .then(r => {
-            equipes[i].leads = r.length;
+            equipes[i].leads = this.getQtdLeadsUnicos(r);
             if (i < equipes.length-1)
               this.puxarLeads(++i)
             else
               this.montaDataset()
           });
+    },
+    getQtdLeadsUnicos(objJson) {
+        var arrName = [];
+        var arrEmail = [];
+        var arrIp= [];
+        var uniques = 0;
+
+        objJson.forEach(lead => {
+          if (arrName.indexOf(lead.name) == -1 && arrEmail.indexOf(lead.email) == -1 && arrIp.indexOf(lead.ip))
+            uniques += 1;
+
+          arrName.push(lead.name);
+          arrEmail.push(lead.email);
+          arrIp.push(lead.ip);
+        });
+        return uniques;
     },
     montaDataset() {
       for(var i=0; i<equipes.length; i++)
